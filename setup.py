@@ -19,18 +19,18 @@ def get_version(rel_path: str) -> str:
 
 
 setup(
-    name='chris-plugin-template',
-    version=get_version('app.py'),
-    description='A ChRIS DS plugin template',
+    name='PrepHighRes',
+    version=get_version('PrepHighRes.py'),
+    description='A ChRIS plugin to prepare the High Resolution data in numpy arrays to further run the pl-TrainSeg',
     author='FNNDSC',
-    author_email='dev@babyMRI.org',
-    url='https://github.com/FNNDSC/python-chrisapp-template',
-    py_modules=['app'],
+    author_email='alan.rivasmunoz@childrens.harvard.edu',
+    url='https://github.com/AlanJese23/pl-PrepHighRes',
+    py_modules=['PrepHighRes'],
     install_requires=['chris_plugin'],
     license='MIT',
     entry_points={
         'console_scripts': [
-            'commandname = app:main'
+            'PrepHighRes = PrepHighRes:main'
         ]
     },
     classifiers=[
